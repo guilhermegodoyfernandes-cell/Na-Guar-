@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Na'Guará – Arepa, tequeño e chicha</title>
+<meta name="description" content="Portfólio de sabores venezuelanos: arepa, tequeño e chicha.">
+<meta name="theme-color" content="#000000">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="naguara.png">
+<link rel="apple-touch-icon" href="naguara.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <img src="naguara.png" alt="Na'Guará – Comida venezolana: arepas e tequeños" width="800" height="800">
+  <p class="lead">Três sabores que contam a Venezuela: a arepa, o tequeño e a chicha.</p>
+  <button id="install" class="btn" hidden>Instalar o app</button>
+</header>
+
+<div class="stripe" aria-hidden="true"></div>
+
+<main>
+  <section id="arepa" class="dish">
+    <img src="arepa.png" width="415" height="320" loading="lazy">
+    <h2>Arepa</h2>
+    <p class="tag">O pão de milho de todo dia</p>
+    <div class="prices" data-price="arepa">
+      <span class="price"><span class="price-cur">R$</span> <strong>14,00</strong> <span class="price-unit">Reina prepiada</span></span>
+      <span class="price"><span class="price-cur">R$</span> <strong>12,00</strong> <span class="price-unit">Queijo e presunto</span></span>
+    </div>
+    <h3>Recheios clássicos</h3>
+    <ul class="chips">
+      <li>Reina pepiada: frango desfiado cremoso com abacate</li>
+      <li>queijo e presunto</li>
+    </ul>
+    <div class="rate" data-dish="arepa" data-name="a arepa"></div>
+  </section>
+
+  <div class="stripe" aria-hidden="true"></div>
+
+  <section id="tequeno" class="dish">
+    <img src="tequeno.png" width="290" height="320" loading="lazy">
+    <h2>Tequeño</h2>
+    <p class="tag">A festa em forma de dedo</p>
+    <div class="prices" data-price="tequeno">
+      <span class="price"><span class="price-cur">R$</span> <strong>8,00</strong> <span class="price-unit">Queijo</span></span>
+      <span class="price"><span class="price-cur">R$</span> <strong>10,00</strong> <span class="price-unit">Chocolate ao leite</span></span>
+    </div>
+    <div class="rate" data-dish="tequeno" data-name="o tequeño"></div>
+  </section>
+
+  <div class="stripe" aria-hidden="true"></div>
+
+  <section id="chicha" class="dish">
+    <svg viewBox="0 0 200 160" role="img" aria-label="Copo de chicha gelada com canela">
+      <path d="M52 24h96l-10 112a14 14 0 0 1-14 12H76a14 14 0 0 1-14-12z" fill="#FDF1DC"/>
+      <path d="M57 62h86l-5 74a14 14 0 0 1-14 12H76a14 14 0 0 1-14-12z" fill="#F4DDB0"/>
+      <ellipse cx="100" cy="62" rx="43" ry="6" fill="#FDF1DC"/>
+      <path d="M118 14l22 40" stroke="#C2742B" stroke-width="7" stroke-linecap="round"/>
+      <path d="M126 12l22 40" stroke="#A85F1F" stroke-width="7" stroke-linecap="round"/>
+    </svg>
+    <h2>Chicha</h2>
+    <p class="tag">Doce, cremosa e bem gelada</p>
+    <div class="prices" data-price="chicha"><span class="price"><span class="price-cur">R$</span> <strong>8,00</strong> <span class="price-unit">o copo</span></span></div>
+    <p>Bebida venezuelana feita com macarrão cozido, leite e leite condensado, perfumada com canela e baunilha. Vem em copo grande, com gelo.</p>
+    <h3>Sabor</h3>
+    <ul class="chips">
+      <li>Macarrão</li>
+      <li>Leite condensado</li>
+      <li>Canela</li>
+      <li>Baunilha</li>
+    </ul>
+    <div class="rate" data-dish="chicha" data-name="a chicha"></div>
+  </section>
+</main>
+
+<footer>
+  <p>Na'Guará · Comida venezuelana</p>
+</footer>
+
+<nav class="tabs" aria-label="Pratos">
+  <a href="#arepa">Arepa</a>
+  <a href="#tequeno">Tequeño</a>
+  <a href="#chicha">Chicha</a>
+</nav>
+
+<script src="app.js"></script>
+</body>
+</html>
